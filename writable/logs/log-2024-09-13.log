@@ -1,0 +1,717 @@
+INFO - 2024-09-13 02:47:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-13 02:47:12 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'u1658729_sembil...', 3306, '', 0)
+#1 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\app\Controllers\user\Homectrl.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(932): App\Controllers\user\Homectrl->index()
+#8 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user\Homectrl))
+#9 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\app\Controllers\user\Homectrl.php(26): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(932): App\Controllers\user\Homectrl->index()
+#7 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user\Homectrl))
+#8 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#11 {main}
+CRITICAL - 2024-09-13 02:47:12 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_profil`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\user\Homectrl.php(26): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\user\Homectrl->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user\Homectrl))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\public\\index.php')
+INFO - 2024-09-13 02:47:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-13 02:47:53 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'u1658729_sembil...', 3306, '', 0)
+#1 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\app\Controllers\user\Homectrl.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(932): App\Controllers\user\Homectrl->index()
+#8 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user\Homectrl))
+#9 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\app\Controllers\user\Homectrl.php(26): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(932): App\Controllers\user\Homectrl->index()
+#7 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user\Homectrl))
+#8 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#11 {main}
+CRITICAL - 2024-09-13 02:47:53 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_profil`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\user\Homectrl.php(26): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\user\Homectrl->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user\Homectrl))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\public\\index.php')
+INFO - 2024-09-13 02:49:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-13 02:49:08 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'u1658729_sembil...', 3306, '', 0)
+#1 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\app\Controllers\user\Homectrl.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(932): App\Controllers\user\Homectrl->index()
+#8 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user\Homectrl))
+#9 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\app\Controllers\user\Homectrl.php(26): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(932): App\Controllers\user\Homectrl->index()
+#7 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user\Homectrl))
+#8 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#11 {main}
+CRITICAL - 2024-09-13 02:49:08 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_profil`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\user\Homectrl.php(26): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\user\Homectrl->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user\Homectrl))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\public\\index.php')
+INFO - 2024-09-13 02:49:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-13 02:49:15 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'company_profile', 3306, '', 0)
+#1 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\app\Controllers\user\Homectrl.php(26): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(932): App\Controllers\user\Homectrl->index()
+#8 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user\Homectrl))
+#9 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\app\Controllers\user\Homectrl.php(26): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(932): App\Controllers\user\Homectrl->index()
+#7 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user\Homectrl))
+#8 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#11 {main}
+CRITICAL - 2024-09-13 02:49:15 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_profil`', [], false)
+ 3 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\user\Homectrl.php(26): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\user\Homectrl->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user\Homectrl))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\public\\index.php')
+INFO - 2024-09-13 02:54:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 02:59:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:00:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:10:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:10:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-13 03:10:37 --> mysqli_sql_exception: Table 'company_profile.tb_artikel' doesn't exist in C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\app\Models\ArtikelModel.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\app\Controllers\user\Artikelctrl.php(28): App\Models\ArtikelModel->getArtikelTerbaru()
+#8 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(932): App\Controllers\user\Artikelctrl->index()
+#9 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user\Artikelctrl))
+#10 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#13 {main}
+CRITICAL - 2024-09-13 03:10:37 --> Table 'company_profile.tb_artikel' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `tb_artikel`
+ORDER BY `id_artikel` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_artikel`
+ORDER BY `id_artikel` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_artikel`
+ORDER BY `id_artikel` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_artikel`
+ORDER BY `id_artikel` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ArtikelModel.php(17): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\user\Artikelctrl.php(28): App\Models\ArtikelModel->getArtikelTerbaru()
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\user\Artikelctrl->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user\Artikelctrl))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\public\\index.php')
+INFO - 2024-09-13 03:10:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:10:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:10:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-13 03:10:59 --> mysqli_sql_exception: Table 'company_profile.tb_artikel' doesn't exist in C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\app\Models\ArtikelModel.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\app\Controllers\user\Artikelctrl.php(28): App\Models\ArtikelModel->getArtikelTerbaru()
+#8 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(932): App\Controllers\user\Artikelctrl->index()
+#9 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user\Artikelctrl))
+#10 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#13 {main}
+CRITICAL - 2024-09-13 03:10:59 --> Table 'company_profile.tb_artikel' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `tb_artikel`
+ORDER BY `id_artikel` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_artikel`
+ORDER BY `id_artikel` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_artikel`
+ORDER BY `id_artikel` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_artikel`
+ORDER BY `id_artikel` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ArtikelModel.php(17): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\user\Artikelctrl.php(28): App\Models\ArtikelModel->getArtikelTerbaru()
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\user\Artikelctrl->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user\Artikelctrl))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\public\\index.php')
+INFO - 2024-09-13 03:11:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:11:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:11:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:11:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:11:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-13 03:11:34 --> mysqli_sql_exception: Table 'company_profile.tb_artikel' doesn't exist in C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\app\Models\ArtikelModel.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\app\Controllers\user\Artikelctrl.php(28): App\Models\ArtikelModel->getArtikelTerbaru()
+#8 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(932): App\Controllers\user\Artikelctrl->index()
+#9 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user\Artikelctrl))
+#10 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#13 {main}
+CRITICAL - 2024-09-13 03:11:34 --> Table 'company_profile.tb_artikel' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `tb_artikel`
+ORDER BY `id_artikel` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_artikel`
+ORDER BY `id_artikel` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_artikel`
+ORDER BY `id_artikel` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_artikel`
+ORDER BY `id_artikel` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ArtikelModel.php(17): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\user\Artikelctrl.php(28): App\Models\ArtikelModel->getArtikelTerbaru()
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\user\Artikelctrl->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user\Artikelctrl))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\public\\index.php')
+INFO - 2024-09-13 03:11:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:11:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:12:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-13 03:12:02 --> mysqli_sql_exception: Table 'company_profile.tb_artikel' doesn't exist in C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\app\Models\ArtikelModel.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\app\Controllers\user\Artikelctrl.php(28): App\Models\ArtikelModel->getArtikelTerbaru()
+#8 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(932): App\Controllers\user\Artikelctrl->index()
+#9 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user\Artikelctrl))
+#10 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#13 {main}
+CRITICAL - 2024-09-13 03:12:02 --> Table 'company_profile.tb_artikel' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `tb_artikel`
+ORDER BY `id_artikel` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_artikel`
+ORDER BY `id_artikel` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_artikel`
+ORDER BY `id_artikel` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_artikel`
+ORDER BY `id_artikel` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ArtikelModel.php(17): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\user\Artikelctrl.php(28): App\Models\ArtikelModel->getArtikelTerbaru()
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\user\Artikelctrl->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user\Artikelctrl))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\public\\index.php')
+INFO - 2024-09-13 03:12:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:13:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:13:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-09-13 03:13:16 --> mysqli_sql_exception: Table 'company_profile.tb_artikel' doesn't exist in C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\app\Models\ArtikelModel.php(17): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\app\Controllers\user\Artikelctrl.php(28): App\Models\ArtikelModel->getArtikelTerbaru()
+#8 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(932): App\Controllers\user\Artikelctrl->index()
+#9 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user\Artikelctrl))
+#10 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#12 C:\Users\user\Downloads\Magang\SEO\19_nabilafruity.kadinkotamalang.com\19\system\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\D...')
+#13 {main}
+CRITICAL - 2024-09-13 03:13:16 --> Table 'company_profile.tb_artikel' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `tb_artikel`
+ORDER BY `id_artikel` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tb_artikel`
+ORDER BY `id_artikel` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tb_artikel`
+ORDER BY `id_artikel` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_artikel`
+ORDER BY `id_artikel` DESC', [], false)
+ 5 SYSTEMPATH\Model.php(241): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Models\ArtikelModel.php(17): CodeIgniter\BaseModel->findAll()
+ 8 APPPATH\Controllers\user\Artikelctrl.php(28): App\Models\ArtikelModel->getArtikelTerbaru()
+ 9 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\user\Artikelctrl->index()
+10 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user\Artikelctrl))
+11 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\public\\index.php')
+INFO - 2024-09-13 03:13:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:14:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:14:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:14:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:14:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:14:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:14:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:14:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:15:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:15:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:15:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:18:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:18:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:18:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:18:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:18:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:18:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:18:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:24:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:24:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:25:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:27:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:27:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:28:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:30:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:45:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:47:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:47:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:47:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:47:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:47:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:50:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:59:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 03:59:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:01:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:07:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:08:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:08:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:08:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:08:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:08:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:09:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:09:05 --> CSRF token verified.
+INFO - 2024-09-13 04:09:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:09:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:10:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:10:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:10:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:10:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:18:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:18:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:19:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:19:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:19:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:19:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:20:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:20:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:23:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:23:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:23:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:23:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:26:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:27:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:27:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:27:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:27:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:27:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:27:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:27:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:27:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:27:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:28:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:28:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:29:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:29:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:30:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 04:30:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 05:13:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 05:13:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 05:13:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 05:13:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 05:13:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 05:13:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 05:13:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 05:13:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 05:14:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 05:14:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 05:14:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 05:29:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 05:29:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 05:29:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 05:30:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 05:31:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 05:31:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 05:31:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 05:31:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 05:31:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 05:31:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 05:31:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 05:31:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 05:31:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 05:31:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 05:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 05:31:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 05:31:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 05:31:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 05:32:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 05:32:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 05:32:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 05:32:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 06:15:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 06:18:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 06:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 06:18:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 06:18:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-13 06:18:52 --> Attempt to read property "id_produk" on null
+in APPPATH\Views\admin\produk\edit.php on line 17.
+ 1 APPPATH\Views\admin\produk\edit.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_produk" on null', 'C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\app\\Views\\admin\\produk\\edit.php', 17)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\app\\Views\\admin\\produk\\edit.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/produk/edit', [], true)
+ 5 APPPATH\Controllers\admin\Produk.php(108): view('admin/produk/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\admin\Produk->edit('favicon.ico')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\Produk))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\public\\index.php')
+INFO - 2024-09-13 06:19:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 06:19:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 06:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 06:42:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 06:42:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 06:42:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 06:42:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 06:53:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 06:53:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-13 06:53:51 --> Undefined variable $all_data_produk
+in APPPATH\Views\admin\meta\index.php on line 66.
+ 1 APPPATH\Views\admin\meta\index.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $all_data_produk', 'C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\app\\Views\\admin\\meta\\index.php', 66)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\app\\Views\\admin\\meta\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/meta/index', [], true)
+ 5 APPPATH\Controllers\admin\MetaController.php(21): view('admin/meta/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\admin\MetaController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\MetaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\public\\index.php')
+INFO - 2024-09-13 06:54:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 06:54:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 06:54:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 06:54:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 06:55:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 06:55:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 06:59:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 06:59:46 --> CSRF token verified.
+INFO - 2024-09-13 06:59:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 06:59:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-13 06:59:46 --> Attempt to read property "id_seo" on string
+in APPPATH\Views\admin\meta\index.php on line 67.
+ 1 APPPATH\Views\admin\meta\index.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_seo" on string', 'C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\app\\Views\\admin\\meta\\index.php', 67)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\app\\Views\\admin\\meta\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/meta/index', [], true)
+ 5 APPPATH\Controllers\admin\MetaController.php(21): view('admin/meta/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\admin\MetaController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\MetaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\public\\index.php')
+INFO - 2024-09-13 07:00:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-13 07:00:21 --> Attempt to read property "id_seo" on string
+in APPPATH\Views\admin\meta\index.php on line 67.
+ 1 APPPATH\Views\admin\meta\index.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_seo" on string', 'C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\app\\Views\\admin\\meta\\index.php', 67)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\app\\Views\\admin\\meta\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/meta/index', [], true)
+ 5 APPPATH\Controllers\admin\MetaController.php(21): view('admin/meta/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\admin\MetaController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\MetaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\public\\index.php')
+INFO - 2024-09-13 07:00:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-13 07:00:54 --> Attempt to read property "id_seo" on string
+in APPPATH\Views\admin\meta\index.php on line 67.
+ 1 APPPATH\Views\admin\meta\index.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_seo" on string', 'C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\app\\Views\\admin\\meta\\index.php', 67)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\app\\Views\\admin\\meta\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/meta/index', [], true)
+ 5 APPPATH\Controllers\admin\MetaController.php(21): view('admin/meta/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\admin\MetaController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\MetaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\public\\index.php')
+INFO - 2024-09-13 07:02:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:02:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:03:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-13 07:03:01 --> Attempt to read property "id_seo" on string
+in APPPATH\Views\admin\meta\index.php on line 67.
+ 1 APPPATH\Views\admin\meta\index.php(67): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_seo" on string', 'C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\app\\Views\\admin\\meta\\index.php', 67)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\app\\Views\\admin\\meta\\index.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/meta/index', [], true)
+ 5 APPPATH\Controllers\admin\MetaController.php(21): view('admin/meta/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\admin\MetaController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\MetaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\public\\index.php')
+INFO - 2024-09-13 07:03:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:03:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-13 07:03:51 --> Attempt to read property "id_produk" on null
+in APPPATH\Views\admin\produk\edit.php on line 17.
+ 1 APPPATH\Views\admin\produk\edit.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "id_produk" on null', 'C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\app\\Views\\admin\\produk\\edit.php', 17)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\app\\Views\\admin\\produk\\edit.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1180): CodeIgniter\View\View->render('admin/produk/edit', [], true)
+ 5 APPPATH\Controllers\admin\MetaController.php(75): view('admin/produk/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\admin\MetaController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\admin\MetaController))
+ 8 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\public\\index.php')
+INFO - 2024-09-13 07:03:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:04:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:04:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:07:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:07:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:10:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-13 07:10:53 --> Call to a member function findAll() on null
+in APPPATH\Controllers\user\Homectrl.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\user\Homectrl->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user\Homectrl))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\public\\index.php')
+INFO - 2024-09-13 07:10:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-13 07:10:58 --> Call to a member function findAll() on null
+in APPPATH\Controllers\user\Homectrl.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\user\Homectrl->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user\Homectrl))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\public\\index.php')
+INFO - 2024-09-13 07:11:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-13 07:11:14 --> Call to a member function findAll() on null
+in APPPATH\Controllers\user\Homectrl.php on line 21.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\user\Homectrl->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user\Homectrl))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\public\\index.php')
+INFO - 2024-09-13 07:11:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-13 07:11:29 --> Call to undefined function App\Controllers\user\character_limiter()
+in APPPATH\Controllers\user\Homectrl.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\user\Homectrl->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user\Homectrl))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\public\\index.php')
+INFO - 2024-09-13 07:11:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-13 07:11:30 --> Call to undefined function App\Controllers\user\character_limiter()
+in APPPATH\Controllers\user\Homectrl.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\user\Homectrl->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user\Homectrl))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\public\\index.php')
+INFO - 2024-09-13 07:11:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-13 07:11:32 --> Call to undefined function App\Controllers\user\character_limiter()
+in APPPATH\Controllers\user\Homectrl.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\user\Homectrl->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user\Homectrl))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\public\\index.php')
+INFO - 2024-09-13 07:12:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-09-13 07:12:01 --> Call to undefined function App\Controllers\user\character_limiter()
+in APPPATH\Controllers\user\Homectrl.php on line 51.
+ 1 SYSTEMPATH\CodeIgniter.php(932): App\Controllers\user\Homectrl->index()
+ 2 SYSTEMPATH\CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\user\Homectrl))
+ 3 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\user\\Downloads\\Magang\\SEO\\19_nabilafruity.kadinkotamalang.com\\19\\public\\index.php')
+INFO - 2024-09-13 07:12:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:13:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:13:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:13:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:15:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:15:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:15:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:16:05 --> CSRF token verified.
+INFO - 2024-09-13 07:16:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:16:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:17:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:17:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:18:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:27:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:27:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:27:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:27:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:42:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:43:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:43:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:43:31 --> CSRF token verified.
+INFO - 2024-09-13 07:43:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:43:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:43:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:44:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:46:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:49:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:49:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:49:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:49:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:49:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:54:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:56:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 07:56:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 08:51:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-09-13 08:51:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
